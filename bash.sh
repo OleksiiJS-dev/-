@@ -1,9 +1,7 @@
 sudo su 
-sudo apt-get update
-sudo apt install git 
 #   github link to project
-git clone https://github.com/OleksiiJS-dev/LUNIX_DEBIAN11.git
-bash LUNIX_DEBIAN11/DEBIAN.sh
+# git clone https://github.com/OleksiiJS-dev/LUNIX_DEBIAN11.git
+# bash LUNIX_DEBIAN11/DEBIAN.sh
 sudo apt-get install apache2 php7.0
 sudo apt-get install npm
 npm install -g pm2
