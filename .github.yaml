@@ -1,0 +1,25 @@
+name: Restart PM2 on Push
+
+on:
+  push:
+    branches:
+      - main  # Укажите вашу основную ветку
+
+jobs:
+  restart:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14  # Укажите версию Node.js, если необходимо
+
+    - name: Install PM2
+      run: npm install -g pm2
+
+    - name: Restart PM2
+      run: pm2 restart my-app  # Укажите имя вашего PM2 приложения
