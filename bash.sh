@@ -1,9 +1,9 @@
 sudo su 
 #APACHE
 sudo apt-get install apache2 php7.0
-echo    '<VirtualHost *:80>
+echo    '<VirtualHost *:433>
         ServerAdmin webmaster@localhost
-        ServerName http://lamborghini-aventador.pp.ua/
+        ServerName 34.118.6.72
         DocumentRoot /var/www/html
         ProxyPass / http://localhost:3000/
         ProxyPassReverse / http://localhost:3000/
