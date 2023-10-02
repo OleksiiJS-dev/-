@@ -1,4 +1,3 @@
-!/bin/bash
 sudo su 
 #APACHE
 sudo apt-get install apache2 php7.0
